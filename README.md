@@ -1,23 +1,52 @@
-# mern
+# MernStack application
 
-Mern stack project
-A Mern(MongoDB, Express, React, NodeJs) stack application with login and authentication
+This repo has a simple mern stack application(mongoDB,ExpressJs,ReactJs,NodeJs) with login authentication.
 
-Dependencies:
--->express
--->mongoose
--->dot-env
--->cookie-parser
--->bycyprt
--->jsonwebtoken
--->express-async-handler
+## Dependencies
 
-Requirements software:
--->Github
--->VScode
+### Backend
 
-Steps:
--->Clone the repo from git using command in git bash or terminal "git clone https://github.com/ACEXRA/mern.git"
--->Open the folder in VScode.
--->Open terminal inside VScode and run command "npm install" to install all required dependencies.
-Unfinsihed
+- ExpressJs - a framework of nodeJs helpful in creating api services.
+- Mongooose - package to connect to mongoDb.
+- dot-env - for .env file configuration.
+- cookie-parser - to parse the token and cookie management in browser.
+- bycrypt - to hash the password.
+- jsonwebtoken - for token creation.
+
+### Frontend
+
+- Reactjs - Frontend framework
+- React Router - routing for webpage
+- Vite - for quickstart of react template
+- Bootstrap - CSS framework
+- Redux - state management
+
+## Installation
+
+Open the project in VScode
+For all backend dependecies installation
+
+```sh
+npm i
+```
+
+For frontend dependencies installation
+
+```sh
+cd frontend
+npm i
+cd ..
+```
+
+Make Sure to create an real .env file with necessary value as shown
+
+```sh
+NODE_ENV=production
+PORT=5000 #PROVIDE PORT VALUE ON WHICH IT NEED TO RUN
+MONGO_URI=YOUR_URI
+JWT_SECRET=WITH A VALUE(EXAMPLE:SANJI123)
+```
+
+Finally "npm run dev"
+The webpage with run on [localhost:3000](http://localhost:3000/)
+And api will run in port 5000.
